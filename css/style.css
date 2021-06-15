@@ -1,0 +1,91 @@
+:root {
+  --color-primary: #2584ff;
+  --color-secondary: #00d9ff;
+  --color-accent: #ff3400;
+  --color-body-darker: #5c5577;
+  --color-border: #ccc;
+  --color-body: #918ca4;
+  --color-headings: #1b0760;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* typography */
+
+::selection {
+  background-color: var(--color-secondary);
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: var(--color-body);
+}
+/* links */
+a {
+  text-decoration: none;
+}
+p {
+  color: #333;
+  margin-bottom: 20px;
+}
+/* Buttons */
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  outline: 0;
+  padding: 2rem 4vw;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  transition: all 100ms;
+  margin: auto;
+  display: inline-flex;
+}
+.btn--primary {
+  background: var(--color-primary);
+  color: #fff;
+  margin-left: 20px;
+}
+.btn--primary:hover {
+  background: #3a8ffd;
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: var(--color-headings);
+}
+
+.btn--outline:hover {
+  border: 2px solid var(--color-headings);
+}
+#showcase {
+  background: url(../images/2.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.buttons {
+  margin-top: 20px;
+}
